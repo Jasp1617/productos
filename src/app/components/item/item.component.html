@@ -1,0 +1,22 @@
+<div class="container">  
+    <div class="d-flex" [ngClass]="{'complete': item.complete}">
+        <div class="title">
+            <input type="checkbox" [checked]="item.complete" (change)="onToggle(item)">
+            {{item.title}}
+        </div>
+        <div class="price">
+            {{item.price | currency}}
+        </div>
+        <div class="quantity">
+            {{item.quantity}}
+        </div>
+        <div class="total">
+            {{(item.price * item.quantity) | currency}}
+        </div>
+    
+        <div class="actions">
+            <button (click)="onDelete(item)" class="btn btn-danger">Eliminar</button>
+        </div>
+    </div>
+        
+</div>

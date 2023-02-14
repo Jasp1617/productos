@@ -1,0 +1,25 @@
+<div class="container mt-5 aling-items-center">
+    <form action="" (ngSubmit)="onSubmit()">
+        <h2>Registrar un nuevo articulo</h2>
+        <div class="mb-3"> 
+            <label for="" class="form-label">Id del articulo:</label>
+            <input type="text" class="form-control" name="id" id="" [(ngModel)]="id">
+        </div>
+    
+        <div class="mb-3">
+            <label for="" class="form-label">Nombre del articulo:</label>
+            <input type="text" class="form-control" name="title" id="" [(ngModel)]="title">
+        </div>
+    
+        <div class="mb-3">
+            <label for="" class="form-label">Precio del articulo:</label>
+            <input type="text" class="form-control" name="price" id="" [(ngModel)]="price">
+        </div>
+    
+        <div class="mb-3">
+            <label for="" class="form-label">Cantidad del articulo:</label>
+            <input type="text" class="form-control" name="quantity" id="" [(ngModel)]="quantity">
+        </div>
+        <input type="submit" value="Crear" class="btn btn-primary">
+    </form>
+</div>
